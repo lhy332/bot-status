@@ -1,9 +1,90 @@
 {
   "schema_version": 1,
-  "generated_at_et": null,
-  "generated_at_utc": null,
-  "expected_last_close": null,
-  "overall": "init",
-  "checks": [],
-  "_note": "Placeholder — 첫 production health_check --push 가 덮어씁니다."
+  "generated_at_et": "2026-05-08T22:22:14-0400",
+  "generated_at_utc": "2026-05-09T02:22:14Z",
+  "expected_last_close": "2026-05-08",
+  "overall": "err",
+  "checks": [
+    {
+      "name": "git_sync",
+      "status": "ok",
+      "summary": "동기화됨 [feat/bot-status-public-mirror 774b73f]",
+      "detail": {
+        "head": "774b73f",
+        "remote_main": "774b73f",
+        "branch": "feat/bot-status-public-mirror"
+      }
+    },
+    {
+      "name": "parquet_fresh",
+      "status": "ok",
+      "summary": "19/24개 최신 (5개 known-lag, 2026-05-08)",
+      "detail": {
+        "expected": "2026-05-08",
+        "total": 24,
+        "critical_stale_count": 0,
+        "known_lag_count": 5,
+        "error_count": 0,
+        "unknown_count": 0,
+        "critical_stale": [],
+        "known_lag": [
+          "DFF(2026-04-22,12bd)",
+          "ETH(2026-04-27,9bd)",
+          "GCF(2026-04-23,11bd)",
+          "HY(2026-04-22,12bd)",
+          "SIF(2026-04-23,11bd)"
+        ],
+        "error": [],
+        "unknown": [],
+        "last_dates": {
+          "AGQ": "2026-05-08",
+          "BULZ": "2026-05-08",
+          "DFF": "2026-04-22",
+          "ETH": "2026-04-27",
+          "GCF": "2026-04-23",
+          "GLD": "2026-05-08",
+          "HY": "2026-04-22",
+          "HYG": "2026-05-08",
+          "NDX": "2026-05-08",
+          "QID": "2026-05-08",
+          "QQQ": "2026-05-08",
+          "SGOV": "2026-05-08",
+          "SIF": "2026-04-23",
+          "SLV": "2026-05-08",
+          "SPX": "2026-05-08",
+          "SVIX": "2026-05-08",
+          "SVXY": "2026-05-08",
+          "TQQQ": "2026-05-08",
+          "UGL": "2026-05-08",
+          "USHY": "2026-05-08",
+          "VIX": "2026-05-08",
+          "VIX3M": "2026-05-08",
+          "XLP": "2026-05-08",
+          "XLY": "2026-05-08"
+        }
+      }
+    },
+    {
+      "name": "targets_fresh",
+      "status": "err",
+      "summary": "today_targets.json 없음",
+      "detail": {}
+    },
+    {
+      "name": "launchd_loaded",
+      "status": "ok",
+      "summary": "com.user.bnt-phase1 로드됨 (last exit 0)",
+      "detail": {
+        "label": "com.user.bnt-phase1",
+        "pid": "-",
+        "last_exit": "0"
+      }
+    },
+    {
+      "name": "last_bot_run",
+      "status": "err",
+      "summary": "automation/logs/ 없음",
+      "detail": {}
+    }
+  ]
 }
