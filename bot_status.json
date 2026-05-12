@@ -1,26 +1,26 @@
 {
   "schema_version": 1,
-  "generated_at_et": "2026-05-11T09:29:26-0400",
-  "generated_at_utc": "2026-05-11T13:29:27Z",
-  "expected_last_close": "2026-05-08",
+  "generated_at_et": "2026-05-12T09:39:48-0400",
+  "generated_at_utc": "2026-05-12T13:39:49Z",
+  "expected_last_close": "2026-05-11",
   "overall": "warn",
   "checks": [
     {
       "name": "git_sync",
       "status": "ok",
-      "summary": "동기화됨 [main 459ba8f]",
+      "summary": "동기화됨 [main ac5853e]",
       "detail": {
-        "head": "459ba8f",
-        "remote_main": "459ba8f",
+        "head": "ac5853e",
+        "remote_main": "ac5853e",
         "branch": "main"
       }
     },
     {
       "name": "parquet_fresh",
       "status": "ok",
-      "summary": "21/24개 최신 (3개 known-lag, 2026-05-08)",
+      "summary": "21/24개 최신 (3개 known-lag, 2026-05-11)",
       "detail": {
-        "expected": "2026-05-08",
+        "expected": "2026-05-11",
         "total": 24,
         "critical_stale_count": 0,
         "known_lag_count": 3,
@@ -28,47 +28,47 @@
         "unknown_count": 0,
         "critical_stale": [],
         "known_lag": [
-          "DFF(2026-04-22,12bd)",
-          "ETH(2026-04-27,9bd)",
-          "HY(2026-04-22,12bd)"
+          "DFF(2026-04-22,13bd)",
+          "ETH(2026-04-27,10bd)",
+          "HY(2026-04-22,13bd)"
         ],
         "error": [],
         "unknown": [],
         "last_dates": {
-          "AGQ": "2026-05-08",
-          "BULZ": "2026-05-08",
+          "AGQ": "2026-05-11",
+          "BULZ": "2026-05-11",
           "DFF": "2026-04-22",
           "ETH": "2026-04-27",
           "GCF": "2026-05-11",
-          "GLD": "2026-05-08",
+          "GLD": "2026-05-11",
           "HY": "2026-04-22",
-          "HYG": "2026-05-08",
-          "NDX": "2026-05-08",
-          "QID": "2026-05-08",
-          "QQQ": "2026-05-08",
-          "SGOV": "2026-05-08",
+          "HYG": "2026-05-11",
+          "NDX": "2026-05-11",
+          "QID": "2026-05-11",
+          "QQQ": "2026-05-11",
+          "SGOV": "2026-05-11",
           "SIF": "2026-05-11",
-          "SLV": "2026-05-08",
-          "SPX": "2026-05-08",
-          "SVIX": "2026-05-08",
-          "SVXY": "2026-05-08",
-          "TQQQ": "2026-05-08",
-          "UGL": "2026-05-08",
-          "USHY": "2026-05-08",
-          "VIX": "2026-05-08",
-          "VIX3M": "2026-05-08",
-          "XLP": "2026-05-08",
-          "XLY": "2026-05-08"
+          "SLV": "2026-05-11",
+          "SPX": "2026-05-11",
+          "SVIX": "2026-05-11",
+          "SVXY": "2026-05-11",
+          "TQQQ": "2026-05-11",
+          "UGL": "2026-05-11",
+          "USHY": "2026-05-11",
+          "VIX": "2026-05-12",
+          "VIX3M": "2026-05-11",
+          "XLP": "2026-05-11",
+          "XLY": "2026-05-11"
         }
       }
     },
     {
       "name": "targets_fresh",
       "status": "ok",
-      "summary": "오늘(2026-05-08) 기준 OK",
+      "summary": "오늘(2026-05-11) 기준 OK",
       "detail": {
-        "target_date": "2026-05-08",
-        "expected": "2026-05-08",
+        "target_date": "2026-05-11",
+        "expected": "2026-05-11",
         "age_days": 0,
         "leverage": {
           "enabled": true,
@@ -79,27 +79,24 @@
     },
     {
       "name": "launchd_loaded",
-      "status": "ok",
-      "summary": "com.user.bnt-phase1 로드됨 (last exit 0)",
+      "status": "warn",
+      "summary": "com.user.bnt-phase1 로드됨, last exit=3",
       "detail": {
         "label": "com.user.bnt-phase1",
-        "pid": "21306",
-        "last_exit": "0"
+        "pid": "46291",
+        "last_exit": "3"
       }
     },
     {
       "name": "last_bot_run",
-      "status": "warn",
-      "summary": "bot_20260511.log 에러 1건",
+      "status": "ok",
+      "summary": "bot_20260512.log 정상 종료",
       "detail": {
-        "file": "bot_20260511.log",
-        "log_date": "2026-05-11",
-        "lines": 23,
-        "last_line": "2026-05-11 09:29:26 [ERROR] risk check failed — aborting before placing orders",
-        "error_count": 1,
-        "error_sample": [
-          "2026-05-11 09:29:26 [ERROR] risk check failed — aborting before placing orders"
-        ]
+        "file": "bot_20260512.log",
+        "log_date": "2026-05-12",
+        "lines": 43,
+        "last_line": "2026-05-12 09:39:47 [INFO] bot done",
+        "error_count": 0
       }
     }
   ]
