@@ -1,75 +1,75 @@
 {
   "schema_version": 1,
-  "generated_at_et": "2026-05-13T09:29:32-0400",
-  "generated_at_utc": "2026-05-13T13:29:32Z",
-  "expected_last_close": "2026-05-12",
+  "generated_at_et": "2026-05-14T09:30:07-0400",
+  "generated_at_utc": "2026-05-14T13:30:08Z",
+  "expected_last_close": "2026-05-13",
   "overall": "warn",
   "checks": [
     {
       "name": "git_sync",
       "status": "ok",
-      "summary": "동기화됨 [main e28378c]",
+      "summary": "동기화됨 [main 8b389c9]",
       "detail": {
-        "head": "e28378c",
-        "remote_main": "e28378c",
+        "head": "8b389c9",
+        "remote_main": "8b389c9",
         "branch": "main"
       }
     },
     {
       "name": "parquet_fresh",
       "status": "warn",
-      "summary": "1/24개 critical stale (need 2026-05-12)",
+      "summary": "1/24개 critical stale (need 2026-05-13)",
       "detail": {
-        "expected": "2026-05-12",
+        "expected": "2026-05-13",
         "total": 24,
         "critical_stale_count": 1,
         "known_lag_count": 2,
         "error_count": 0,
         "unknown_count": 0,
         "critical_stale": [
-          "ETH(2026-04-27,11bd)"
+          "ETH(2026-04-27,12bd)"
         ],
         "known_lag": [
-          "DFF(2026-04-22,14bd)",
-          "HY(2026-04-22,14bd)"
+          "DFF(2026-04-22,15bd)",
+          "HY(2026-04-22,15bd)"
         ],
         "error": [],
         "unknown": [],
         "last_dates": {
-          "AGQ": "2026-05-12",
-          "BULZ": "2026-05-12",
+          "AGQ": "2026-05-13",
+          "BULZ": "2026-05-13",
           "DFF": "2026-04-22",
           "ETH": "2026-04-27",
-          "GCF": "2026-05-12",
-          "GLD": "2026-05-12",
+          "GCF": "2026-05-14",
+          "GLD": "2026-05-13",
           "HY": "2026-04-22",
-          "HYG": "2026-05-12",
-          "NDX": "2026-05-12",
-          "QID": "2026-05-12",
-          "QQQ": "2026-05-12",
-          "SGOV": "2026-05-12",
-          "SIF": "2026-05-12",
-          "SLV": "2026-05-12",
-          "SPX": "2026-05-12",
-          "SVIX": "2026-05-12",
-          "SVXY": "2026-05-12",
-          "TQQQ": "2026-05-12",
-          "UGL": "2026-05-12",
-          "USHY": "2026-05-12",
-          "VIX": "2026-05-12",
-          "VIX3M": "2026-05-12",
-          "XLP": "2026-05-12",
-          "XLY": "2026-05-12"
+          "HYG": "2026-05-13",
+          "NDX": "2026-05-13",
+          "QID": "2026-05-13",
+          "QQQ": "2026-05-13",
+          "SGOV": "2026-05-13",
+          "SIF": "2026-05-14",
+          "SLV": "2026-05-13",
+          "SPX": "2026-05-13",
+          "SVIX": "2026-05-13",
+          "SVXY": "2026-05-13",
+          "TQQQ": "2026-05-13",
+          "UGL": "2026-05-13",
+          "USHY": "2026-05-13",
+          "VIX": "2026-05-14",
+          "VIX3M": "2026-05-13",
+          "XLP": "2026-05-13",
+          "XLY": "2026-05-13"
         }
       }
     },
     {
       "name": "targets_fresh",
       "status": "ok",
-      "summary": "오늘(2026-05-12) 기준 OK",
+      "summary": "오늘(2026-05-13) 기준 OK",
       "detail": {
-        "target_date": "2026-05-12",
-        "expected": "2026-05-12",
+        "target_date": "2026-05-13",
+        "expected": "2026-05-13",
         "age_days": 0,
         "leverage": {
           "enabled": false,
@@ -80,26 +80,26 @@
     },
     {
       "name": "launchd_loaded",
-      "status": "ok",
-      "summary": "com.user.bnt-phase1 로드됨 (last exit 0)",
+      "status": "warn",
+      "summary": "com.user.bnt-phase1 로드됨, last exit=4",
       "detail": {
         "label": "com.user.bnt-phase1",
-        "pid": "554",
-        "last_exit": "0"
+        "pid": "67014",
+        "last_exit": "4"
       }
     },
     {
       "name": "last_bot_run",
       "status": "warn",
-      "summary": "bot_20260513.log 에러 1건",
+      "summary": "bot_20260514.log 에러 1건",
       "detail": {
-        "file": "bot_20260513.log",
-        "log_date": "2026-05-13",
+        "file": "bot_20260514.log",
+        "log_date": "2026-05-14",
         "lines": 4,
-        "last_line": "2026-05-13 09:29:31 [ERROR] IB connect failed:  — is TWS running on 127.0.0.1:7497?",
+        "last_line": "2026-05-14 09:30:07 [ERROR] IB connect failed:  — is TWS running on 127.0.0.1:7497?",
         "error_count": 1,
         "error_sample": [
-          "2026-05-13 09:29:31 [ERROR] IB connect failed:  — is TWS running on 127.0.0.1:7497?"
+          "2026-05-14 09:30:07 [ERROR] IB connect failed:  — is TWS running on 127.0.0.1:7497?"
         ]
       }
     }
