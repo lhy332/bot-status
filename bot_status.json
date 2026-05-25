@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at_et": "2026-05-22T09:39:14-0400",
-  "generated_at_utc": "2026-05-22T13:39:15Z",
-  "expected_last_close": "2026-05-21",
+  "generated_at_et": "2026-05-25T09:29:35-0400",
+  "generated_at_utc": "2026-05-25T13:29:36Z",
+  "expected_last_close": "2026-05-22",
   "overall": "warn",
   "checks": [
     {
@@ -18,57 +18,79 @@
     {
       "name": "parquet_fresh",
       "status": "warn",
-      "summary": "3/24개 critical stale (need 2026-05-21)",
+      "summary": "10/31개 critical stale (need 2026-05-22)",
       "detail": {
-        "expected": "2026-05-21",
-        "total": 24,
-        "critical_stale_count": 3,
+        "expected": "2026-05-22",
+        "total": 31,
+        "critical_stale_count": 10,
         "known_lag_count": 0,
         "error_count": 0,
-        "unknown_count": 0,
+        "unknown_count": 7,
         "critical_stale": [
-          "DFF(2026-04-22,21bd)",
-          "ETH(2026-04-27,18bd)",
-          "HY(2026-04-22,21bd)"
+          "CPI_1970s(1984-12-01,10819bd)",
+          "DFF(2026-04-22,22bd)",
+          "ETH(2026-04-27,19bd)",
+          "GOLD_1970s(1985-12-01,10559bd)",
+          "GOLD_full_monthly(2026-03-01,59bd)",
+          "H15_RATES_1970s(1985-12-31,10538bd)",
+          "HY(2026-04-22,22bd)",
+          "SHILLER_1970s(1985-12-01,10559bd)",
+          "SHILLER_full_monthly(2023-09-01,710bd)",
+          "SPX_1970s(1985-12-31,10538bd)"
         ],
         "known_lag": [],
         "error": [],
-        "unknown": [],
+        "unknown": [
+          "CPI_1970s",
+          "GOLD_1970s",
+          "GOLD_full_monthly",
+          "H15_RATES_1970s",
+          "SHILLER_1970s",
+          "SHILLER_full_monthly",
+          "SPX_1970s"
+        ],
         "last_dates": {
-          "AGQ": "2026-05-21",
-          "BULZ": "2026-05-21",
+          "AGQ": "2026-05-22",
+          "BULZ": "2026-05-22",
+          "CPI_1970s": "1984-12-01",
           "DFF": "2026-04-22",
           "ETH": "2026-04-27",
-          "GCF": "2026-05-21",
-          "GLD": "2026-05-21",
+          "GCF": "2026-05-22",
+          "GLD": "2026-05-22",
+          "GOLD_1970s": "1985-12-01",
+          "GOLD_full_monthly": "2026-03-01",
+          "H15_RATES_1970s": "1985-12-31",
           "HY": "2026-04-22",
-          "HYG": "2026-05-21",
-          "NDX": "2026-05-21",
-          "QID": "2026-05-21",
-          "QQQ": "2026-05-21",
-          "SGOV": "2026-05-21",
-          "SIF": "2026-05-21",
-          "SLV": "2026-05-21",
-          "SPX": "2026-05-21",
-          "SVIX": "2026-05-21",
-          "SVXY": "2026-05-21",
-          "TQQQ": "2026-05-21",
-          "UGL": "2026-05-21",
-          "USHY": "2026-05-21",
-          "VIX": "2026-05-21",
-          "VIX3M": "2026-05-21",
-          "XLP": "2026-05-21",
-          "XLY": "2026-05-21"
+          "HYG": "2026-05-22",
+          "NDX": "2026-05-22",
+          "QID": "2026-05-22",
+          "QQQ": "2026-05-22",
+          "SGOV": "2026-05-22",
+          "SHILLER_1970s": "1985-12-01",
+          "SHILLER_full_monthly": "2023-09-01",
+          "SIF": "2026-05-22",
+          "SLV": "2026-05-22",
+          "SPX": "2026-05-22",
+          "SPX_1970s": "1985-12-31",
+          "SVIX": "2026-05-22",
+          "SVXY": "2026-05-22",
+          "TQQQ": "2026-05-22",
+          "UGL": "2026-05-22",
+          "USHY": "2026-05-22",
+          "VIX": "2026-05-22",
+          "VIX3M": "2026-05-22",
+          "XLP": "2026-05-22",
+          "XLY": "2026-05-22"
         }
       }
     },
     {
       "name": "targets_fresh",
       "status": "ok",
-      "summary": "오늘(2026-05-21) 기준 OK",
+      "summary": "오늘(2026-05-22) 기준 OK",
       "detail": {
-        "target_date": "2026-05-21",
-        "expected": "2026-05-21",
+        "target_date": "2026-05-22",
+        "expected": "2026-05-22",
         "age_days": 0,
         "leverage": {
           "enabled": false,
@@ -83,33 +105,33 @@
       "summary": "com.user.bnt-phase1 로드됨 (last exit 0)",
       "detail": {
         "label": "com.user.bnt-phase1",
-        "pid": "4705",
+        "pid": "84198",
         "last_exit": "0"
       }
     },
     {
       "name": "last_bot_run",
       "status": "ok",
-      "summary": "bot_20260522.log 정상 종료",
+      "summary": "bot_20260525.log 정상 종료",
       "detail": {
-        "file": "bot_20260522.log",
-        "log_date": "2026-05-22",
-        "lines": 40,
-        "last_line": "2026-05-22 09:39:13 [INFO] bot done",
+        "file": "bot_20260525.log",
+        "log_date": "2026-05-25",
+        "lines": 2,
+        "last_line": "2026-05-25 09:29:25 [INFO] NYSE closed today (2026-05-25) — skipping bot run",
         "error_count": 0
       }
     },
     {
       "name": "snapshot_nav_fresh",
-      "status": "ok",
-      "summary": "3행, last=2026-05-22 (1,085,019 CAD)",
+      "status": "warn",
+      "summary": "4행, last=2026-05-25 partial (IBKR NAV 누락)",
       "detail": {
-        "rows": 3,
-        "last_date": "2026-05-22",
-        "last_nav_cad": 1085018.61,
-        "last_is_partial": false,
-        "partial_rows_total": 0,
-        "expected_min_last": "2026-05-22"
+        "rows": 4,
+        "last_date": "2026-05-25",
+        "last_nav_cad": null,
+        "last_is_partial": true,
+        "partial_rows_total": 1,
+        "expected_min_last": "2026-05-25"
       }
     }
   ]
