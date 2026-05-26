@@ -1,44 +1,47 @@
 {
   "schema_version": 1,
-  "generated_at_et": "2026-05-25T09:29:35-0400",
-  "generated_at_utc": "2026-05-25T13:29:36Z",
-  "expected_last_close": "2026-05-22",
+  "generated_at_et": "2026-05-26T09:29:36-0400",
+  "generated_at_utc": "2026-05-26T13:29:37Z",
+  "expected_last_close": "2026-05-25",
   "overall": "warn",
   "checks": [
     {
       "name": "git_sync",
       "status": "warn",
-      "summary": "HEAD 9c3b41d ≠ origin/main 85466bb",
+      "summary": "HEAD 9c3b41d ≠ origin/main d9f59dd",
       "detail": {
         "head": "9c3b41d",
-        "remote_main": "85466bb",
+        "remote_main": "d9f59dd",
         "branch": "claude/bt-dipbuy-meta"
       }
     },
     {
       "name": "parquet_fresh",
       "status": "warn",
-      "summary": "10/31개 critical stale (need 2026-05-22)",
+      "summary": "28/31개 critical stale (need 2026-05-25)",
       "detail": {
-        "expected": "2026-05-22",
+        "expected": "2026-05-25",
         "total": 31,
-        "critical_stale_count": 10,
-        "known_lag_count": 0,
+        "critical_stale_count": 28,
+        "known_lag_count": 2,
         "error_count": 0,
         "unknown_count": 7,
         "critical_stale": [
-          "CPI_1970s(1984-12-01,10819bd)",
-          "DFF(2026-04-22,22bd)",
-          "ETH(2026-04-27,19bd)",
-          "GOLD_1970s(1985-12-01,10559bd)",
-          "GOLD_full_monthly(2026-03-01,59bd)",
-          "H15_RATES_1970s(1985-12-31,10538bd)",
-          "HY(2026-04-22,22bd)",
-          "SHILLER_1970s(1985-12-01,10559bd)",
-          "SHILLER_full_monthly(2023-09-01,710bd)",
-          "SPX_1970s(1985-12-31,10538bd)"
+          "AGQ(2026-05-22,1bd)",
+          "BULZ(2026-05-22,1bd)",
+          "CPI_1970s(1984-12-01,10820bd)",
+          "DFF(2026-04-22,23bd)",
+          "ETH(2026-04-27,20bd)",
+          "GLD(2026-05-22,1bd)",
+          "GOLD_1970s(1985-12-01,10560bd)",
+          "GOLD_full_monthly(2026-03-01,60bd)",
+          "H15_RATES_1970s(1985-12-31,10539bd)",
+          "HY(2026-04-22,23bd)"
         ],
-        "known_lag": [],
+        "known_lag": [
+          "GCF(2026-05-22,1bd)",
+          "SIF(2026-05-22,1bd)"
+        ],
         "error": [],
         "unknown": [
           "CPI_1970s",
@@ -77,7 +80,7 @@
           "TQQQ": "2026-05-22",
           "UGL": "2026-05-22",
           "USHY": "2026-05-22",
-          "VIX": "2026-05-22",
+          "VIX": "2026-05-25",
           "VIX3M": "2026-05-22",
           "XLP": "2026-05-22",
           "XLY": "2026-05-22"
@@ -86,12 +89,12 @@
     },
     {
       "name": "targets_fresh",
-      "status": "ok",
-      "summary": "오늘(2026-05-22) 기준 OK",
+      "status": "warn",
+      "summary": "3일 stale (target=2026-05-22)",
       "detail": {
         "target_date": "2026-05-22",
-        "expected": "2026-05-22",
-        "age_days": 0,
+        "expected": "2026-05-25",
+        "age_days": 3,
         "leverage": {
           "enabled": false,
           "state": "NORMAL",
@@ -105,7 +108,7 @@
       "summary": "com.user.bnt-phase1 로드됨 (last exit 0)",
       "detail": {
         "label": "com.user.bnt-phase1",
-        "pid": "84198",
+        "pid": "20463",
         "last_exit": "0"
       }
     },
@@ -123,15 +126,15 @@
     },
     {
       "name": "snapshot_nav_fresh",
-      "status": "warn",
-      "summary": "4행, last=2026-05-25 partial (IBKR NAV 누락)",
+      "status": "ok",
+      "summary": "5행, last=2026-05-26 (1,091,085 CAD), partial 1개",
       "detail": {
-        "rows": 4,
-        "last_date": "2026-05-25",
-        "last_nav_cad": null,
-        "last_is_partial": true,
+        "rows": 5,
+        "last_date": "2026-05-26",
+        "last_nav_cad": 1091084.81,
+        "last_is_partial": false,
         "partial_rows_total": 1,
-        "expected_min_last": "2026-05-25"
+        "expected_min_last": "2026-05-26"
       }
     }
   ]
