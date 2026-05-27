@@ -1,47 +1,44 @@
 {
   "schema_version": 1,
-  "generated_at_et": "2026-05-26T09:29:36-0400",
-  "generated_at_utc": "2026-05-26T13:29:37Z",
-  "expected_last_close": "2026-05-25",
+  "generated_at_et": "2026-05-27T09:35:06-0400",
+  "generated_at_utc": "2026-05-27T13:35:07Z",
+  "expected_last_close": "2026-05-26",
   "overall": "warn",
   "checks": [
     {
       "name": "git_sync",
       "status": "warn",
-      "summary": "HEAD 9c3b41d ≠ origin/main d9f59dd",
+      "summary": "HEAD 613e53a ≠ origin/main 9ddfa36",
       "detail": {
-        "head": "9c3b41d",
-        "remote_main": "d9f59dd",
+        "head": "613e53a",
+        "remote_main": "9ddfa36",
         "branch": "claude/bt-dipbuy-meta"
       }
     },
     {
       "name": "parquet_fresh",
       "status": "warn",
-      "summary": "28/31개 critical stale (need 2026-05-25)",
+      "summary": "10/31개 critical stale (need 2026-05-26)",
       "detail": {
-        "expected": "2026-05-25",
+        "expected": "2026-05-26",
         "total": 31,
-        "critical_stale_count": 28,
-        "known_lag_count": 2,
+        "critical_stale_count": 10,
+        "known_lag_count": 0,
         "error_count": 0,
         "unknown_count": 7,
         "critical_stale": [
-          "AGQ(2026-05-22,1bd)",
-          "BULZ(2026-05-22,1bd)",
-          "CPI_1970s(1984-12-01,10820bd)",
-          "DFF(2026-04-22,23bd)",
-          "ETH(2026-04-27,20bd)",
-          "GLD(2026-05-22,1bd)",
-          "GOLD_1970s(1985-12-01,10560bd)",
-          "GOLD_full_monthly(2026-03-01,60bd)",
-          "H15_RATES_1970s(1985-12-31,10539bd)",
-          "HY(2026-04-22,23bd)"
+          "CPI_1970s(1984-12-01,10821bd)",
+          "DFF(2026-04-22,24bd)",
+          "ETH(2026-04-27,21bd)",
+          "GOLD_1970s(1985-12-01,10561bd)",
+          "GOLD_full_monthly(2026-03-01,61bd)",
+          "H15_RATES_1970s(1985-12-31,10540bd)",
+          "HY(2026-04-22,24bd)",
+          "SHILLER_1970s(1985-12-01,10561bd)",
+          "SHILLER_full_monthly(2023-09-01,712bd)",
+          "SPX_1970s(1985-12-31,10540bd)"
         ],
-        "known_lag": [
-          "GCF(2026-05-22,1bd)",
-          "SIF(2026-05-22,1bd)"
-        ],
+        "known_lag": [],
         "error": [],
         "unknown": [
           "CPI_1970s",
@@ -53,48 +50,48 @@
           "SPX_1970s"
         ],
         "last_dates": {
-          "AGQ": "2026-05-22",
-          "BULZ": "2026-05-22",
+          "AGQ": "2026-05-26",
+          "BULZ": "2026-05-26",
           "CPI_1970s": "1984-12-01",
           "DFF": "2026-04-22",
           "ETH": "2026-04-27",
-          "GCF": "2026-05-22",
-          "GLD": "2026-05-22",
+          "GCF": "2026-05-26",
+          "GLD": "2026-05-26",
           "GOLD_1970s": "1985-12-01",
           "GOLD_full_monthly": "2026-03-01",
           "H15_RATES_1970s": "1985-12-31",
           "HY": "2026-04-22",
-          "HYG": "2026-05-22",
-          "NDX": "2026-05-22",
-          "QID": "2026-05-22",
-          "QQQ": "2026-05-22",
-          "SGOV": "2026-05-22",
+          "HYG": "2026-05-26",
+          "NDX": "2026-05-26",
+          "QID": "2026-05-26",
+          "QQQ": "2026-05-26",
+          "SGOV": "2026-05-26",
           "SHILLER_1970s": "1985-12-01",
           "SHILLER_full_monthly": "2023-09-01",
-          "SIF": "2026-05-22",
-          "SLV": "2026-05-22",
-          "SPX": "2026-05-22",
+          "SIF": "2026-05-26",
+          "SLV": "2026-05-26",
+          "SPX": "2026-05-26",
           "SPX_1970s": "1985-12-31",
-          "SVIX": "2026-05-22",
-          "SVXY": "2026-05-22",
-          "TQQQ": "2026-05-22",
-          "UGL": "2026-05-22",
-          "USHY": "2026-05-22",
-          "VIX": "2026-05-25",
-          "VIX3M": "2026-05-22",
-          "XLP": "2026-05-22",
-          "XLY": "2026-05-22"
+          "SVIX": "2026-05-26",
+          "SVXY": "2026-05-26",
+          "TQQQ": "2026-05-26",
+          "UGL": "2026-05-26",
+          "USHY": "2026-05-26",
+          "VIX": "2026-05-26",
+          "VIX3M": "2026-05-26",
+          "XLP": "2026-05-26",
+          "XLY": "2026-05-26"
         }
       }
     },
     {
       "name": "targets_fresh",
-      "status": "warn",
-      "summary": "3일 stale (target=2026-05-22)",
+      "status": "ok",
+      "summary": "오늘(2026-05-26) 기준 OK",
       "detail": {
-        "target_date": "2026-05-22",
-        "expected": "2026-05-25",
-        "age_days": 3,
+        "target_date": "2026-05-26",
+        "expected": "2026-05-26",
+        "age_days": 0,
         "leverage": {
           "enabled": false,
           "state": "NORMAL",
@@ -104,37 +101,37 @@
     },
     {
       "name": "launchd_loaded",
-      "status": "ok",
-      "summary": "com.user.bnt-phase1 로드됨 (last exit 0)",
+      "status": "warn",
+      "summary": "com.user.bnt-phase1 로드됨, last exit=1",
       "detail": {
         "label": "com.user.bnt-phase1",
-        "pid": "20463",
-        "last_exit": "0"
+        "pid": "81928",
+        "last_exit": "1"
       }
     },
     {
       "name": "last_bot_run",
       "status": "ok",
-      "summary": "bot_20260525.log 정상 종료",
+      "summary": "bot_20260527.log 정상 종료",
       "detail": {
-        "file": "bot_20260525.log",
-        "log_date": "2026-05-25",
-        "lines": 2,
-        "last_line": "2026-05-25 09:29:25 [INFO] NYSE closed today (2026-05-25) — skipping bot run",
+        "file": "bot_20260527.log",
+        "log_date": "2026-05-27",
+        "lines": 34,
+        "last_line": "2026-05-27 09:35:05 [INFO] bot done",
         "error_count": 0
       }
     },
     {
       "name": "snapshot_nav_fresh",
       "status": "ok",
-      "summary": "5행, last=2026-05-26 (1,091,085 CAD), partial 1개",
+      "summary": "6행, last=2026-05-27 (1,081,609 CAD), partial 1개",
       "detail": {
-        "rows": 5,
-        "last_date": "2026-05-26",
-        "last_nav_cad": 1091084.81,
+        "rows": 6,
+        "last_date": "2026-05-27",
+        "last_nav_cad": 1081608.51,
         "last_is_partial": false,
         "partial_rows_total": 1,
-        "expected_min_last": "2026-05-26"
+        "expected_min_last": "2026-05-27"
       }
     }
   ]
