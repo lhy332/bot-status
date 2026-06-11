@@ -1,74 +1,74 @@
 {
   "schema_version": 1,
-  "generated_at_et": "2026-06-10T09:40:03-0400",
-  "generated_at_utc": "2026-06-10T13:40:04Z",
-  "expected_last_close": "2026-06-09",
+  "generated_at_et": "2026-06-11T09:35:02-0400",
+  "generated_at_utc": "2026-06-11T13:35:03Z",
+  "expected_last_close": "2026-06-10",
   "overall": "warn",
   "checks": [
     {
       "name": "git_sync",
       "status": "warn",
-      "summary": "HEAD f143c2a ≠ origin/main 42edcb6",
+      "summary": "HEAD f143c2a ≠ origin/main 5aa1db3",
       "detail": {
         "head": "f143c2a",
-        "remote_main": "42edcb6",
+        "remote_main": "5aa1db3",
         "branch": "claude/bt-dipbuy-meta"
       }
     },
     {
       "name": "parquet_fresh",
       "status": "warn",
-      "summary": "3/24개 critical stale (need 2026-06-09)",
+      "summary": "3/24개 critical stale (need 2026-06-10)",
       "detail": {
-        "expected": "2026-06-09",
+        "expected": "2026-06-10",
         "total": 24,
         "critical_stale_count": 3,
         "known_lag_count": 0,
         "error_count": 0,
         "unknown_count": 0,
         "critical_stale": [
-          "DFF(2026-04-22,34bd)",
-          "ETH(2026-04-27,31bd)",
-          "HY(2026-04-22,34bd)"
+          "DFF(2026-04-22,35bd)",
+          "ETH(2026-04-27,32bd)",
+          "HY(2026-04-22,35bd)"
         ],
         "known_lag": [],
         "error": [],
         "unknown": [],
         "last_dates": {
-          "AGQ": "2026-06-09",
-          "BULZ": "2026-06-09",
+          "AGQ": "2026-06-10",
+          "BULZ": "2026-06-10",
           "DFF": "2026-04-22",
           "ETH": "2026-04-27",
-          "GCF": "2026-06-09",
-          "GLD": "2026-06-09",
+          "GCF": "2026-06-10",
+          "GLD": "2026-06-10",
           "HY": "2026-04-22",
-          "HYG": "2026-06-09",
-          "NDX": "2026-06-09",
-          "QID": "2026-06-09",
-          "QQQ": "2026-06-09",
-          "SGOV": "2026-06-09",
-          "SIF": "2026-06-09",
-          "SLV": "2026-06-09",
-          "SPX": "2026-06-09",
-          "SVIX": "2026-06-09",
-          "SVXY": "2026-06-09",
-          "TQQQ": "2026-06-09",
-          "UGL": "2026-06-09",
-          "USHY": "2026-06-09",
-          "VIX": "2026-06-09",
-          "VIX3M": "2026-06-09",
-          "XLP": "2026-06-09",
-          "XLY": "2026-06-09"
+          "HYG": "2026-06-10",
+          "NDX": "2026-06-10",
+          "QID": "2026-06-10",
+          "QQQ": "2026-06-10",
+          "SGOV": "2026-06-10",
+          "SIF": "2026-06-10",
+          "SLV": "2026-06-10",
+          "SPX": "2026-06-10",
+          "SVIX": "2026-06-10",
+          "SVXY": "2026-06-10",
+          "TQQQ": "2026-06-10",
+          "UGL": "2026-06-10",
+          "USHY": "2026-06-10",
+          "VIX": "2026-06-10",
+          "VIX3M": "2026-06-10",
+          "XLP": "2026-06-10",
+          "XLY": "2026-06-10"
         }
       }
     },
     {
       "name": "targets_fresh",
       "status": "ok",
-      "summary": "오늘(2026-06-09) 기준 OK",
+      "summary": "오늘(2026-06-10) 기준 OK",
       "detail": {
-        "target_date": "2026-06-09",
-        "expected": "2026-06-09",
+        "target_date": "2026-06-10",
+        "expected": "2026-06-10",
         "age_days": 0,
         "leverage": {
           "enabled": false,
@@ -83,33 +83,33 @@
       "summary": "com.user.bnt-phase1 로드됨 (last exit 0)",
       "detail": {
         "label": "com.user.bnt-phase1",
-        "pid": "89310",
+        "pid": "98051",
         "last_exit": "0"
       }
     },
     {
       "name": "last_bot_run",
       "status": "ok",
-      "summary": "bot_20260610.log 정상 종료",
+      "summary": "bot_20260611.log 정상 종료",
       "detail": {
-        "file": "bot_20260610.log",
-        "log_date": "2026-06-10",
-        "lines": 42,
-        "last_line": "2026-06-10 09:40:02 [INFO] bot done",
+        "file": "bot_20260611.log",
+        "log_date": "2026-06-11",
+        "lines": 37,
+        "last_line": "2026-06-11 09:35:01 [INFO] bot done",
         "error_count": 0
       }
     },
     {
       "name": "snapshot_nav_fresh",
       "status": "ok",
-      "summary": "15행, last=2026-06-10 (1,039,636 CAD), partial 1개",
+      "summary": "16행, last=2026-06-11 (1,031,988 CAD), partial 1개",
       "detail": {
-        "rows": 15,
-        "last_date": "2026-06-10",
-        "last_nav_cad": 1039635.92,
+        "rows": 16,
+        "last_date": "2026-06-11",
+        "last_nav_cad": 1031987.53,
         "last_is_partial": false,
         "partial_rows_total": 1,
-        "expected_min_last": "2026-06-10"
+        "expected_min_last": "2026-06-11"
       }
     }
   ]
