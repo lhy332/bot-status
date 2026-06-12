@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at_et": "2026-06-12T09:29:43-0400",
-  "generated_at_utc": "2026-06-12T13:29:44Z",
+  "generated_at_et": "2026-06-12T10:29:50-0400",
+  "generated_at_utc": "2026-06-12T14:29:51Z",
   "expected_last_close": "2026-06-11",
   "overall": "warn",
   "checks": [
@@ -84,12 +84,12 @@
     },
     {
       "name": "launchd_loaded",
-      "status": "ok",
-      "summary": "com.user.bnt-phase1 로드됨 (last exit 0)",
+      "status": "warn",
+      "summary": "com.user.bnt-phase1 로드됨, last exit=4",
       "detail": {
         "label": "com.user.bnt-phase1",
-        "pid": "35186",
-        "last_exit": "0"
+        "pid": "37329",
+        "last_exit": "4"
       }
     },
     {
@@ -109,14 +109,14 @@
     },
     {
       "name": "snapshot_nav_fresh",
-      "status": "warn",
-      "summary": "17행, last=2026-06-12 partial (IBKR NAV 누락)",
+      "status": "ok",
+      "summary": "17행, last=2026-06-12 (1,056,241 CAD), partial 1개",
       "detail": {
         "rows": 17,
         "last_date": "2026-06-12",
-        "last_nav_cad": null,
-        "last_is_partial": true,
-        "partial_rows_total": 2,
+        "last_nav_cad": 1056241.3,
+        "last_is_partial": false,
+        "partial_rows_total": 1,
         "expected_min_last": "2026-06-12"
       }
     }
