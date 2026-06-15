@@ -1,35 +1,35 @@
 {
   "schema_version": 1,
-  "generated_at_et": "2026-06-12T10:29:50-0400",
-  "generated_at_utc": "2026-06-12T14:29:51Z",
-  "expected_last_close": "2026-06-11",
+  "generated_at_et": "2026-06-15T09:29:23-0400",
+  "generated_at_utc": "2026-06-15T13:29:24Z",
+  "expected_last_close": "2026-06-12",
   "overall": "warn",
   "checks": [
     {
       "name": "git_sync",
       "status": "ok",
-      "summary": "동기화됨 [main 9342a50]",
+      "summary": "동기화됨 [main aa63c8c]",
       "detail": {
-        "head": "9342a50",
-        "remote_main": "9342a50",
+        "head": "aa63c8c",
+        "remote_main": "aa63c8c",
         "branch": "main"
       }
     },
     {
       "name": "parquet_fresh",
       "status": "warn",
-      "summary": "3/26개 critical stale (need 2026-06-11)",
+      "summary": "3/26개 critical stale (need 2026-06-12)",
       "detail": {
-        "expected": "2026-06-11",
+        "expected": "2026-06-12",
         "total": 26,
         "critical_stale_count": 3,
         "known_lag_count": 0,
         "error_count": 0,
         "unknown_count": 2,
         "critical_stale": [
-          "DFF(2026-04-22,36bd)",
-          "ETH(2026-04-27,33bd)",
-          "HY(2026-04-22,36bd)"
+          "DFF(2026-04-22,37bd)",
+          "ETH(2026-04-27,34bd)",
+          "HY(2026-04-22,37bd)"
         ],
         "known_lag": [],
         "error": [],
@@ -38,42 +38,42 @@
           "SOXX"
         ],
         "last_dates": {
-          "AGQ": "2026-06-11",
-          "BULZ": "2026-06-11",
+          "AGQ": "2026-06-12",
+          "BULZ": "2026-06-12",
           "DFF": "2026-04-22",
           "ETH": "2026-04-27",
-          "GCF": "2026-06-11",
-          "GLD": "2026-06-11",
+          "GCF": "2026-06-12",
+          "GLD": "2026-06-12",
           "HY": "2026-04-22",
-          "HYG": "2026-06-11",
-          "NDX": "2026-06-11",
-          "QID": "2026-06-11",
-          "QQQ": "2026-06-11",
-          "SGOV": "2026-06-11",
-          "SIF": "2026-06-11",
-          "SLV": "2026-06-11",
-          "SOXL": "2026-06-11",
-          "SOXX": "2026-06-11",
-          "SPX": "2026-06-11",
-          "SVIX": "2026-06-11",
-          "SVXY": "2026-06-11",
-          "TQQQ": "2026-06-11",
-          "UGL": "2026-06-11",
-          "USHY": "2026-06-11",
-          "VIX": "2026-06-11",
-          "VIX3M": "2026-06-11",
-          "XLP": "2026-06-11",
-          "XLY": "2026-06-11"
+          "HYG": "2026-06-12",
+          "NDX": "2026-06-12",
+          "QID": "2026-06-12",
+          "QQQ": "2026-06-12",
+          "SGOV": "2026-06-12",
+          "SIF": "2026-06-12",
+          "SLV": "2026-06-12",
+          "SOXL": "2026-06-12",
+          "SOXX": "2026-06-12",
+          "SPX": "2026-06-12",
+          "SVIX": "2026-06-12",
+          "SVXY": "2026-06-12",
+          "TQQQ": "2026-06-12",
+          "UGL": "2026-06-12",
+          "USHY": "2026-06-12",
+          "VIX": "2026-06-12",
+          "VIX3M": "2026-06-12",
+          "XLP": "2026-06-12",
+          "XLY": "2026-06-12"
         }
       }
     },
     {
       "name": "targets_fresh",
       "status": "ok",
-      "summary": "오늘(2026-06-11) 기준 OK",
+      "summary": "오늘(2026-06-12) 기준 OK",
       "detail": {
-        "target_date": "2026-06-11",
-        "expected": "2026-06-11",
+        "target_date": "2026-06-12",
+        "expected": "2026-06-12",
         "age_days": 0,
         "leverage": {
           "enabled": false,
@@ -85,39 +85,39 @@
     {
       "name": "launchd_loaded",
       "status": "warn",
-      "summary": "com.user.bnt-phase1 로드됨, last exit=4",
+      "summary": "com.user.bnt-phase1 로드됨, last exit=1",
       "detail": {
         "label": "com.user.bnt-phase1",
-        "pid": "37329",
-        "last_exit": "4"
+        "pid": "96482",
+        "last_exit": "1"
       }
     },
     {
       "name": "last_bot_run",
       "status": "warn",
-      "summary": "bot_20260612.log 에러 1건",
+      "summary": "bot_20260615.log 에러 1건",
       "detail": {
-        "file": "bot_20260612.log",
-        "log_date": "2026-06-12",
+        "file": "bot_20260615.log",
+        "log_date": "2026-06-15",
         "lines": 4,
-        "last_line": "2026-06-12 09:29:33 [ERROR] IB connect failed:  — is TWS running on 127.0.0.1:7497?",
+        "last_line": "2026-06-15 09:29:22 [ERROR] IB connect failed: [Errno 61] Connect call failed ('127.0.0.1', 7497) — is TWS running on 127.0.0.1:7497?",
         "error_count": 1,
         "error_sample": [
-          "2026-06-12 09:29:33 [ERROR] IB connect failed:  — is TWS running on 127.0.0.1:7497?"
+          "2026-06-15 09:29:22 [ERROR] IB connect failed: [Errno 61] Connect call failed ('127.0.0.1', 7497) — is TWS running on 127.0.0.1:7497?"
         ]
       }
     },
     {
       "name": "snapshot_nav_fresh",
-      "status": "ok",
-      "summary": "17행, last=2026-06-12 (1,056,241 CAD), partial 1개",
+      "status": "warn",
+      "summary": "18행, last=2026-06-15 partial (IBKR NAV 누락)",
       "detail": {
-        "rows": 17,
-        "last_date": "2026-06-12",
-        "last_nav_cad": 1056241.3,
-        "last_is_partial": false,
-        "partial_rows_total": 1,
-        "expected_min_last": "2026-06-12"
+        "rows": 18,
+        "last_date": "2026-06-15",
+        "last_nav_cad": null,
+        "last_is_partial": true,
+        "partial_rows_total": 2,
+        "expected_min_last": "2026-06-15"
       }
     }
   ]
