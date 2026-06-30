@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at_et": "2026-06-29T09:35:04-0400",
-  "generated_at_utc": "2026-06-29T13:35:05Z",
-  "expected_last_close": "2026-06-26",
+  "generated_at_et": "2026-06-30T09:40:02-0400",
+  "generated_at_utc": "2026-06-30T13:40:03Z",
+  "expected_last_close": "2026-06-29",
   "overall": "warn",
   "checks": [
     {
@@ -18,18 +18,18 @@
     {
       "name": "parquet_fresh",
       "status": "warn",
-      "summary": "3/26개 critical stale (need 2026-06-26)",
+      "summary": "3/26개 critical stale (need 2026-06-29)",
       "detail": {
-        "expected": "2026-06-26",
+        "expected": "2026-06-29",
         "total": 26,
         "critical_stale_count": 3,
         "known_lag_count": 0,
         "error_count": 0,
         "unknown_count": 2,
         "critical_stale": [
-          "DFF(2026-04-22,47bd)",
-          "ETH(2026-04-27,44bd)",
-          "HY(2026-04-22,47bd)"
+          "DFF(2026-04-22,48bd)",
+          "ETH(2026-04-27,45bd)",
+          "HY(2026-04-22,48bd)"
         ],
         "known_lag": [],
         "error": [],
@@ -38,42 +38,42 @@
           "SOXX"
         ],
         "last_dates": {
-          "AGQ": "2026-06-26",
-          "BULZ": "2026-06-26",
+          "AGQ": "2026-06-29",
+          "BULZ": "2026-06-29",
           "DFF": "2026-04-22",
           "ETH": "2026-04-27",
-          "GCF": "2026-06-26",
-          "GLD": "2026-06-26",
+          "GCF": "2026-06-29",
+          "GLD": "2026-06-29",
           "HY": "2026-04-22",
-          "HYG": "2026-06-26",
-          "NDX": "2026-06-26",
-          "QID": "2026-06-26",
-          "QQQ": "2026-06-26",
-          "SGOV": "2026-06-26",
-          "SIF": "2026-06-26",
-          "SLV": "2026-06-26",
-          "SOXL": "2026-06-26",
-          "SOXX": "2026-06-26",
-          "SPX": "2026-06-26",
-          "SVIX": "2026-06-26",
-          "SVXY": "2026-06-26",
-          "TQQQ": "2026-06-26",
-          "UGL": "2026-06-26",
-          "USHY": "2026-06-26",
-          "VIX": "2026-06-26",
-          "VIX3M": "2026-06-26",
-          "XLP": "2026-06-26",
-          "XLY": "2026-06-26"
+          "HYG": "2026-06-29",
+          "NDX": "2026-06-29",
+          "QID": "2026-06-29",
+          "QQQ": "2026-06-29",
+          "SGOV": "2026-06-29",
+          "SIF": "2026-06-29",
+          "SLV": "2026-06-29",
+          "SOXL": "2026-06-29",
+          "SOXX": "2026-06-29",
+          "SPX": "2026-06-29",
+          "SVIX": "2026-06-29",
+          "SVXY": "2026-06-29",
+          "TQQQ": "2026-06-29",
+          "UGL": "2026-06-29",
+          "USHY": "2026-06-29",
+          "VIX": "2026-06-29",
+          "VIX3M": "2026-06-29",
+          "XLP": "2026-06-29",
+          "XLY": "2026-06-29"
         }
       }
     },
     {
       "name": "targets_fresh",
       "status": "ok",
-      "summary": "오늘(2026-06-26) 기준 OK",
+      "summary": "오늘(2026-06-29) 기준 OK",
       "detail": {
-        "target_date": "2026-06-26",
-        "expected": "2026-06-26",
+        "target_date": "2026-06-29",
+        "expected": "2026-06-29",
         "age_days": 0,
         "leverage": {
           "enabled": false,
@@ -84,37 +84,37 @@
     },
     {
       "name": "launchd_loaded",
-      "status": "warn",
-      "summary": "com.user.bnt-phase1 로드됨, last exit=4",
+      "status": "ok",
+      "summary": "com.user.bnt-phase1 로드됨 (last exit 0)",
       "detail": {
         "label": "com.user.bnt-phase1",
-        "pid": "66286",
-        "last_exit": "4"
+        "pid": "83040",
+        "last_exit": "0"
       }
     },
     {
       "name": "last_bot_run",
       "status": "ok",
-      "summary": "bot_20260629.log 정상 종료",
+      "summary": "bot_20260630.log 정상 종료",
       "detail": {
-        "file": "bot_20260629.log",
-        "log_date": "2026-06-29",
+        "file": "bot_20260630.log",
+        "log_date": "2026-06-30",
         "lines": 46,
-        "last_line": "2026-06-29 09:35:03 [INFO] bot done",
+        "last_line": "2026-06-30 09:40:01 [INFO] bot done",
         "error_count": 0
       }
     },
     {
       "name": "snapshot_nav_fresh",
       "status": "ok",
-      "summary": "28행, last=2026-06-29 (1,067,769 CAD), partial 5개",
+      "summary": "29행, last=2026-06-30 (1,070,389 CAD), partial 5개",
       "detail": {
-        "rows": 28,
-        "last_date": "2026-06-29",
-        "last_nav_cad": 1067769.31,
+        "rows": 29,
+        "last_date": "2026-06-30",
+        "last_nav_cad": 1070389.44,
         "last_is_partial": false,
         "partial_rows_total": 5,
-        "expected_min_last": "2026-06-29"
+        "expected_min_last": "2026-06-30"
       }
     }
   ]
