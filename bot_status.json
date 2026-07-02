@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at_et": "2026-07-01T09:30:30-0400",
-  "generated_at_utc": "2026-07-01T13:30:31Z",
-  "expected_last_close": "2026-06-30",
+  "generated_at_et": "2026-07-02T09:40:04-0400",
+  "generated_at_utc": "2026-07-02T13:40:05Z",
+  "expected_last_close": "2026-07-01",
   "overall": "warn",
   "checks": [
     {
@@ -18,18 +18,18 @@
     {
       "name": "parquet_fresh",
       "status": "warn",
-      "summary": "3/26개 critical stale (need 2026-06-30)",
+      "summary": "3/26개 critical stale (need 2026-07-01)",
       "detail": {
-        "expected": "2026-06-30",
+        "expected": "2026-07-01",
         "total": 26,
         "critical_stale_count": 3,
         "known_lag_count": 0,
         "error_count": 0,
         "unknown_count": 2,
         "critical_stale": [
-          "DFF(2026-04-22,49bd)",
-          "ETH(2026-04-27,46bd)",
-          "HY(2026-04-22,49bd)"
+          "DFF(2026-04-22,50bd)",
+          "ETH(2026-04-27,47bd)",
+          "HY(2026-04-22,50bd)"
         ],
         "known_lag": [],
         "error": [],
@@ -38,42 +38,42 @@
           "SOXX"
         ],
         "last_dates": {
-          "AGQ": "2026-06-30",
-          "BULZ": "2026-06-30",
+          "AGQ": "2026-07-01",
+          "BULZ": "2026-07-01",
           "DFF": "2026-04-22",
           "ETH": "2026-04-27",
-          "GCF": "2026-06-30",
-          "GLD": "2026-06-30",
+          "GCF": "2026-07-01",
+          "GLD": "2026-07-01",
           "HY": "2026-04-22",
-          "HYG": "2026-06-30",
-          "NDX": "2026-06-30",
-          "QID": "2026-06-30",
-          "QQQ": "2026-06-30",
-          "SGOV": "2026-06-30",
-          "SIF": "2026-06-30",
-          "SLV": "2026-06-30",
-          "SOXL": "2026-06-30",
-          "SOXX": "2026-06-30",
-          "SPX": "2026-06-30",
-          "SVIX": "2026-06-30",
-          "SVXY": "2026-06-30",
-          "TQQQ": "2026-06-30",
-          "UGL": "2026-06-30",
-          "USHY": "2026-06-30",
-          "VIX": "2026-06-30",
-          "VIX3M": "2026-06-30",
-          "XLP": "2026-06-30",
-          "XLY": "2026-06-30"
+          "HYG": "2026-07-01",
+          "NDX": "2026-07-01",
+          "QID": "2026-07-01",
+          "QQQ": "2026-07-01",
+          "SGOV": "2026-07-01",
+          "SIF": "2026-07-01",
+          "SLV": "2026-07-01",
+          "SOXL": "2026-07-01",
+          "SOXX": "2026-07-01",
+          "SPX": "2026-07-01",
+          "SVIX": "2026-07-01",
+          "SVXY": "2026-07-01",
+          "TQQQ": "2026-07-01",
+          "UGL": "2026-07-01",
+          "USHY": "2026-07-01",
+          "VIX": "2026-07-01",
+          "VIX3M": "2026-07-01",
+          "XLP": "2026-07-01",
+          "XLY": "2026-07-01"
         }
       }
     },
     {
       "name": "targets_fresh",
       "status": "ok",
-      "summary": "오늘(2026-06-30) 기준 OK",
+      "summary": "오늘(2026-07-01) 기준 OK",
       "detail": {
-        "target_date": "2026-06-30",
-        "expected": "2026-06-30",
+        "target_date": "2026-07-01",
+        "expected": "2026-07-01",
         "age_days": 0,
         "leverage": {
           "enabled": false,
@@ -84,40 +84,37 @@
     },
     {
       "name": "launchd_loaded",
-      "status": "ok",
-      "summary": "com.user.bnt-phase1 로드됨 (last exit 0)",
+      "status": "warn",
+      "summary": "com.user.bnt-phase1 로드됨, last exit=4",
       "detail": {
         "label": "com.user.bnt-phase1",
-        "pid": "483",
-        "last_exit": "0"
+        "pid": "19235",
+        "last_exit": "4"
       }
     },
     {
       "name": "last_bot_run",
-      "status": "warn",
-      "summary": "bot_20260701.log 에러 1건",
+      "status": "ok",
+      "summary": "bot_20260702.log 정상 종료",
       "detail": {
-        "file": "bot_20260701.log",
-        "log_date": "2026-07-01",
-        "lines": 4,
-        "last_line": "2026-07-01 09:30:19 [ERROR] IB connect failed:  — is TWS running on 127.0.0.1:7497?",
-        "error_count": 1,
-        "error_sample": [
-          "2026-07-01 09:30:19 [ERROR] IB connect failed:  — is TWS running on 127.0.0.1:7497?"
-        ]
+        "file": "bot_20260702.log",
+        "log_date": "2026-07-02",
+        "lines": 39,
+        "last_line": "2026-07-02 09:40:03 [INFO] bot done",
+        "error_count": 0
       }
     },
     {
       "name": "snapshot_nav_fresh",
-      "status": "warn",
-      "summary": "30행, last=2026-07-01 partial (IBKR NAV 누락)",
+      "status": "ok",
+      "summary": "31행, last=2026-07-02 (1,061,205 CAD), partial 6개",
       "detail": {
-        "rows": 30,
-        "last_date": "2026-07-01",
-        "last_nav_cad": null,
-        "last_is_partial": true,
+        "rows": 31,
+        "last_date": "2026-07-02",
+        "last_nav_cad": 1061205.01,
+        "last_is_partial": false,
         "partial_rows_total": 6,
-        "expected_min_last": "2026-07-01"
+        "expected_min_last": "2026-07-02"
       }
     }
   ]
