@@ -1,17 +1,17 @@
 {
   "schema_version": 1,
-  "generated_at_et": "2026-07-03T09:29:30-0400",
-  "generated_at_utc": "2026-07-03T13:29:30Z",
+  "generated_at_et": "2026-07-06T09:35:15-0400",
+  "generated_at_utc": "2026-07-06T13:35:16Z",
   "expected_last_close": "2026-07-02",
   "overall": "warn",
   "checks": [
     {
       "name": "git_sync",
       "status": "warn",
-      "summary": "HEAD f2afad1 ≠ origin/main ab6f4fe",
+      "summary": "HEAD f2afad1 ≠ origin/main d572d2a",
       "detail": {
         "head": "f2afad1",
-        "remote_main": "ab6f4fe",
+        "remote_main": "d572d2a",
         "branch": "main"
       }
     },
@@ -88,33 +88,33 @@
       "summary": "com.user.bnt-phase1 로드됨 (last exit 0)",
       "detail": {
         "label": "com.user.bnt-phase1",
-        "pid": "37933",
+        "pid": "90324",
         "last_exit": "0"
       }
     },
     {
       "name": "last_bot_run",
       "status": "ok",
-      "summary": "bot_20260703.log 정상 종료",
+      "summary": "bot_20260706.log 정상 종료",
       "detail": {
-        "file": "bot_20260703.log",
-        "log_date": "2026-07-03",
-        "lines": 2,
-        "last_line": "2026-07-03 09:29:28 [INFO] NYSE closed today (2026-07-03) — skipping bot run",
+        "file": "bot_20260706.log",
+        "log_date": "2026-07-06",
+        "lines": 39,
+        "last_line": "2026-07-06 09:35:14 [INFO] bot done",
         "error_count": 0
       }
     },
     {
       "name": "snapshot_nav_fresh",
       "status": "ok",
-      "summary": "32행, last=2026-07-03 (1,059,726 CAD), partial 6개",
+      "summary": "33행, last=2026-07-06 (1,066,055 CAD), partial 6개",
       "detail": {
-        "rows": 32,
-        "last_date": "2026-07-03",
-        "last_nav_cad": 1059726.35,
+        "rows": 33,
+        "last_date": "2026-07-06",
+        "last_nav_cad": 1066054.63,
         "last_is_partial": false,
         "partial_rows_total": 6,
-        "expected_min_last": "2026-07-03"
+        "expected_min_last": "2026-07-06"
       }
     }
   ]
