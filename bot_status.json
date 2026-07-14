@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at_et": "2026-07-14T09:29:54-0400",
-  "generated_at_utc": "2026-07-14T13:29:55Z",
+  "generated_at_et": "2026-07-14T09:42:14-0400",
+  "generated_at_utc": "2026-07-14T13:42:14Z",
   "expected_last_close": "2026-07-13",
   "overall": "warn",
   "checks": [
@@ -84,39 +84,41 @@
     },
     {
       "name": "launchd_loaded",
-      "status": "ok",
-      "summary": "com.user.bnt-phase1 로드됨 (last exit 0)",
+      "status": "warn",
+      "summary": "com.user.bnt-phase1 로드됨, last exit=4",
       "detail": {
         "label": "com.user.bnt-phase1",
-        "pid": "45119",
-        "last_exit": "0"
+        "pid": "-",
+        "last_exit": "4"
       }
     },
     {
       "name": "last_bot_run",
       "status": "warn",
-      "summary": "bot_20260714.log 에러 1건",
+      "summary": "bot_20260714.log 에러 3건",
       "detail": {
         "file": "bot_20260714.log",
         "log_date": "2026-07-14",
-        "lines": 4,
-        "last_line": "2026-07-14 09:29:54 [ERROR] IB connect failed: [Errno 61] Connect call failed ('127.0.0.1', 7497) — is TWS running on 127.0.0.1:7497?",
-        "error_count": 1,
+        "lines": 44,
+        "last_line": "2026-07-14 09:41:09 [INFO] bot done",
+        "error_count": 3,
         "error_sample": [
-          "2026-07-14 09:29:54 [ERROR] IB connect failed: [Errno 61] Connect call failed ('127.0.0.1', 7497) — is TWS running on 127.0.0.1:7497?"
+          "2026-07-14 09:29:54 [ERROR] IB connect failed: [Errno 61] Connect call failed ('127.0.0.1', 7497) — is TWS running on 127.0.0.1:7497?",
+          "2026-07-14 09:30:15 [ERROR] IB connect failed: [Errno 61] Connect call failed ('127.0.0.1', 7497) — is TWS running on 127.0.0.1:7497?",
+          "2026-07-14 09:30:53 [ERROR] IB connect failed: [Errno 61] Connect call failed ('127.0.0.1', 7497) — is TWS running on 127.0.0.1:7497?"
         ]
       }
     },
     {
       "name": "snapshot_nav_fresh",
-      "status": "warn",
-      "summary": "39행, last=2026-07-14 partial (IBKR NAV 누락)",
+      "status": "ok",
+      "summary": "39행, last=2026-07-14 (1,042,361 CAD), partial 6개",
       "detail": {
         "rows": 39,
         "last_date": "2026-07-14",
-        "last_nav_cad": null,
-        "last_is_partial": true,
-        "partial_rows_total": 7,
+        "last_nav_cad": 1042360.53,
+        "last_is_partial": false,
+        "partial_rows_total": 6,
         "expected_min_last": "2026-07-14"
       }
     }
