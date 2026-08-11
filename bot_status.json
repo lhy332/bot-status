@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at_et": "2026-08-10T09:35:01-0400",
-  "generated_at_utc": "2026-08-10T13:35:03Z",
-  "expected_last_close": "2026-08-07",
+  "generated_at_et": "2026-08-11T09:35:02-0400",
+  "generated_at_utc": "2026-08-11T13:35:03Z",
+  "expected_last_close": "2026-08-10",
   "overall": "warn",
   "checks": [
     {
@@ -18,18 +18,18 @@
     {
       "name": "parquet_fresh",
       "status": "warn",
-      "summary": "3/26개 critical stale (need 2026-08-07)",
+      "summary": "3/26개 critical stale (need 2026-08-10)",
       "detail": {
-        "expected": "2026-08-07",
+        "expected": "2026-08-10",
         "total": 26,
         "critical_stale_count": 3,
         "known_lag_count": 0,
         "error_count": 0,
         "unknown_count": 2,
         "critical_stale": [
-          "DFF(2026-04-22,77bd)",
-          "ETH(2026-04-27,74bd)",
-          "HY(2026-04-22,77bd)"
+          "DFF(2026-04-22,78bd)",
+          "ETH(2026-04-27,75bd)",
+          "HY(2026-04-22,78bd)"
         ],
         "known_lag": [],
         "error": [],
@@ -38,42 +38,42 @@
           "SOXX"
         ],
         "last_dates": {
-          "AGQ": "2026-08-07",
-          "BULZ": "2026-08-07",
+          "AGQ": "2026-08-10",
+          "BULZ": "2026-08-10",
           "DFF": "2026-04-22",
           "ETH": "2026-04-27",
-          "GCF": "2026-08-07",
-          "GLD": "2026-08-07",
+          "GCF": "2026-08-10",
+          "GLD": "2026-08-10",
           "HY": "2026-04-22",
-          "HYG": "2026-08-07",
-          "NDX": "2026-08-07",
-          "QID": "2026-08-07",
-          "QQQ": "2026-08-07",
-          "SGOV": "2026-08-07",
-          "SIF": "2026-08-07",
-          "SLV": "2026-08-07",
-          "SOXL": "2026-08-07",
-          "SOXX": "2026-08-07",
-          "SPX": "2026-08-07",
-          "SVIX": "2026-08-07",
-          "SVXY": "2026-08-07",
-          "TQQQ": "2026-08-07",
-          "UGL": "2026-08-07",
-          "USHY": "2026-08-07",
-          "VIX": "2026-08-07",
-          "VIX3M": "2026-08-07",
-          "XLP": "2026-08-07",
-          "XLY": "2026-08-07"
+          "HYG": "2026-08-10",
+          "NDX": "2026-08-10",
+          "QID": "2026-08-10",
+          "QQQ": "2026-08-10",
+          "SGOV": "2026-08-10",
+          "SIF": "2026-08-10",
+          "SLV": "2026-08-10",
+          "SOXL": "2026-08-10",
+          "SOXX": "2026-08-10",
+          "SPX": "2026-08-10",
+          "SVIX": "2026-08-10",
+          "SVXY": "2026-08-10",
+          "TQQQ": "2026-08-10",
+          "UGL": "2026-08-10",
+          "USHY": "2026-08-10",
+          "VIX": "2026-08-10",
+          "VIX3M": "2026-08-10",
+          "XLP": "2026-08-10",
+          "XLY": "2026-08-10"
         }
       }
     },
     {
       "name": "targets_fresh",
       "status": "ok",
-      "summary": "오늘(2026-08-07) 기준 OK",
+      "summary": "오늘(2026-08-10) 기준 OK",
       "detail": {
-        "target_date": "2026-08-07",
-        "expected": "2026-08-07",
+        "target_date": "2026-08-10",
+        "expected": "2026-08-10",
         "age_days": 0,
         "leverage": {
           "enabled": false,
@@ -88,33 +88,33 @@
       "summary": "com.user.bnt-phase1 로드됨 (last exit 0)",
       "detail": {
         "label": "com.user.bnt-phase1",
-        "pid": "57994",
+        "pid": "75141",
         "last_exit": "0"
       }
     },
     {
       "name": "last_bot_run",
       "status": "ok",
-      "summary": "bot_20260810.log 정상 종료",
+      "summary": "bot_20260811.log 정상 종료",
       "detail": {
-        "file": "bot_20260810.log",
-        "log_date": "2026-08-10",
-        "lines": 32,
-        "last_line": "2026-08-10 09:35:00 [INFO] bot done",
+        "file": "bot_20260811.log",
+        "log_date": "2026-08-11",
+        "lines": 36,
+        "last_line": "2026-08-11 09:35:00 [INFO] bot done",
         "error_count": 0
       }
     },
     {
       "name": "snapshot_nav_fresh",
       "status": "ok",
-      "summary": "58행, last=2026-08-10 (1,079,302 CAD), partial 15개",
+      "summary": "59행, last=2026-08-11 (1,081,493 CAD), partial 15개",
       "detail": {
-        "rows": 58,
-        "last_date": "2026-08-10",
-        "last_nav_cad": 1079302.48,
+        "rows": 59,
+        "last_date": "2026-08-11",
+        "last_nav_cad": 1081492.63,
         "last_is_partial": false,
         "partial_rows_total": 15,
-        "expected_min_last": "2026-08-10"
+        "expected_min_last": "2026-08-11"
       }
     }
   ]
