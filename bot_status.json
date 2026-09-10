@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at_et": "2026-09-09T09:40:01-0400",
-  "generated_at_utc": "2026-09-09T13:40:02Z",
-  "expected_last_close": "2026-09-08",
+  "generated_at_et": "2026-09-10T09:30:12-0400",
+  "generated_at_utc": "2026-09-10T13:30:13Z",
+  "expected_last_close": "2026-09-09",
   "overall": "warn",
   "checks": [
     {
@@ -18,18 +18,18 @@
     {
       "name": "parquet_fresh",
       "status": "warn",
-      "summary": "3/26개 critical stale (need 2026-09-08)",
+      "summary": "3/26개 critical stale (need 2026-09-09)",
       "detail": {
-        "expected": "2026-09-08",
+        "expected": "2026-09-09",
         "total": 26,
         "critical_stale_count": 3,
         "known_lag_count": 0,
         "error_count": 0,
         "unknown_count": 2,
         "critical_stale": [
-          "DFF(2026-04-22,99bd)",
-          "ETH(2026-04-27,96bd)",
-          "HY(2026-04-22,99bd)"
+          "DFF(2026-04-22,100bd)",
+          "ETH(2026-04-27,97bd)",
+          "HY(2026-04-22,100bd)"
         ],
         "known_lag": [],
         "error": [],
@@ -38,42 +38,42 @@
           "SOXX"
         ],
         "last_dates": {
-          "AGQ": "2026-09-08",
-          "BULZ": "2026-09-08",
+          "AGQ": "2026-09-09",
+          "BULZ": "2026-09-09",
           "DFF": "2026-04-22",
           "ETH": "2026-04-27",
-          "GCF": "2026-09-08",
-          "GLD": "2026-09-08",
+          "GCF": "2026-09-09",
+          "GLD": "2026-09-09",
           "HY": "2026-04-22",
-          "HYG": "2026-09-08",
-          "NDX": "2026-09-08",
-          "QID": "2026-09-08",
-          "QQQ": "2026-09-08",
-          "SGOV": "2026-09-08",
-          "SIF": "2026-09-08",
-          "SLV": "2026-09-08",
-          "SOXL": "2026-09-08",
-          "SOXX": "2026-09-08",
-          "SPX": "2026-09-08",
-          "SVIX": "2026-09-08",
-          "SVXY": "2026-09-08",
-          "TQQQ": "2026-09-08",
-          "UGL": "2026-09-08",
-          "USHY": "2026-09-08",
-          "VIX": "2026-09-08",
-          "VIX3M": "2026-09-08",
-          "XLP": "2026-09-08",
-          "XLY": "2026-09-08"
+          "HYG": "2026-09-09",
+          "NDX": "2026-09-09",
+          "QID": "2026-09-09",
+          "QQQ": "2026-09-09",
+          "SGOV": "2026-09-09",
+          "SIF": "2026-09-09",
+          "SLV": "2026-09-09",
+          "SOXL": "2026-09-09",
+          "SOXX": "2026-09-09",
+          "SPX": "2026-09-09",
+          "SVIX": "2026-09-09",
+          "SVXY": "2026-09-09",
+          "TQQQ": "2026-09-09",
+          "UGL": "2026-09-09",
+          "USHY": "2026-09-09",
+          "VIX": "2026-09-09",
+          "VIX3M": "2026-09-09",
+          "XLP": "2026-09-09",
+          "XLY": "2026-09-09"
         }
       }
     },
     {
       "name": "targets_fresh",
       "status": "ok",
-      "summary": "오늘(2026-09-08) 기준 OK",
+      "summary": "오늘(2026-09-09) 기준 OK",
       "detail": {
-        "target_date": "2026-09-08",
-        "expected": "2026-09-08",
+        "target_date": "2026-09-09",
+        "expected": "2026-09-09",
         "age_days": 0,
         "leverage": {
           "enabled": false,
@@ -88,33 +88,36 @@
       "summary": "com.user.bnt-phase1 로드됨 (last exit 0)",
       "detail": {
         "label": "com.user.bnt-phase1",
-        "pid": "44617",
+        "pid": "55257",
         "last_exit": "0"
       }
     },
     {
       "name": "last_bot_run",
-      "status": "ok",
-      "summary": "bot_20260909.log 정상 종료",
+      "status": "warn",
+      "summary": "bot_20260910.log 에러 1건",
       "detail": {
-        "file": "bot_20260909.log",
-        "log_date": "2026-09-09",
-        "lines": 38,
-        "last_line": "2026-09-09 09:40:00 [INFO] bot done",
-        "error_count": 0
+        "file": "bot_20260910.log",
+        "log_date": "2026-09-10",
+        "lines": 4,
+        "last_line": "2026-09-10 09:30:01 [ERROR] IB connect failed:  — is TWS running on 127.0.0.1:7497?",
+        "error_count": 1,
+        "error_sample": [
+          "2026-09-10 09:30:01 [ERROR] IB connect failed:  — is TWS running on 127.0.0.1:7497?"
+        ]
       }
     },
     {
       "name": "snapshot_nav_fresh",
-      "status": "ok",
-      "summary": "80행, last=2026-09-09 (1,079,598 CAD), partial 28개",
+      "status": "warn",
+      "summary": "81행, last=2026-09-10 partial (IBKR NAV 누락)",
       "detail": {
-        "rows": 80,
-        "last_date": "2026-09-09",
-        "last_nav_cad": 1079597.79,
-        "last_is_partial": false,
-        "partial_rows_total": 28,
-        "expected_min_last": "2026-09-09"
+        "rows": 81,
+        "last_date": "2026-09-10",
+        "last_nav_cad": null,
+        "last_is_partial": true,
+        "partial_rows_total": 29,
+        "expected_min_last": "2026-09-10"
       }
     }
   ]
