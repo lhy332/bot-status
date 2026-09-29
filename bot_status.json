@@ -1,38 +1,38 @@
 {
   "schema_version": 1,
-  "generated_at_et": "2026-09-28T09:36:20-0400",
-  "generated_at_utc": "2026-09-28T13:36:21Z",
-  "expected_last_close": "2026-09-25",
+  "generated_at_et": "2026-09-29T09:35:12-0400",
+  "generated_at_utc": "2026-09-29T13:35:13Z",
+  "expected_last_close": "2026-09-28",
   "overall": "warn",
   "checks": [
     {
       "name": "git_sync",
       "status": "warn",
-      "summary": "HEAD d890863 ≠ origin/main aa4ac90",
+      "summary": "HEAD d890863 ≠ origin/main 5d329e3",
       "detail": {
         "head": "d890863",
-        "remote_main": "aa4ac90",
+        "remote_main": "5d329e3",
         "branch": "main"
       }
     },
     {
       "name": "parquet_fresh",
       "status": "warn",
-      "summary": "2/28개 critical stale (need 2026-09-25)",
+      "summary": "2/28개 critical stale (need 2026-09-28)",
       "detail": {
-        "expected": "2026-09-25",
+        "expected": "2026-09-28",
         "total": 28,
         "critical_stale_count": 2,
         "known_lag_count": 2,
         "error_count": 0,
         "unknown_count": 4,
         "critical_stale": [
-          "CPI(2026-08-01,39bd)",
-          "ETH(2026-04-27,109bd)"
+          "CPI(2026-08-01,40bd)",
+          "ETH(2026-04-27,110bd)"
         ],
         "known_lag": [
-          "DFF(2026-09-24,1bd)",
-          "HY(2026-09-24,1bd)"
+          "DFF(2026-09-25,1bd)",
+          "HY(2026-09-25,1bd)"
         ],
         "error": [],
         "unknown": [
@@ -42,44 +42,44 @@
           "SOXX"
         ],
         "last_dates": {
-          "AGQ": "2026-09-25",
-          "BULZ": "2026-09-25",
+          "AGQ": "2026-09-28",
+          "BULZ": "2026-09-28",
           "CPI": "2026-08-01",
-          "DFF": "2026-09-24",
-          "DTB3": "2026-09-25",
+          "DFF": "2026-09-25",
+          "DTB3": "2026-09-28",
           "ETH": "2026-04-27",
-          "GCF": "2026-09-25",
-          "GLD": "2026-09-25",
-          "HY": "2026-09-24",
-          "HYG": "2026-09-25",
-          "NDX": "2026-09-25",
-          "QID": "2026-09-25",
-          "QQQ": "2026-09-25",
-          "SGOV": "2026-09-25",
-          "SIF": "2026-09-25",
-          "SLV": "2026-09-25",
-          "SOXL": "2026-09-25",
-          "SOXX": "2026-09-25",
-          "SPX": "2026-09-25",
-          "SVIX": "2026-09-25",
-          "SVXY": "2026-09-25",
-          "TQQQ": "2026-09-25",
-          "UGL": "2026-09-25",
-          "USHY": "2026-09-25",
-          "VIX": "2026-09-25",
-          "VIX3M": "2026-09-25",
-          "XLP": "2026-09-25",
-          "XLY": "2026-09-25"
+          "GCF": "2026-09-28",
+          "GLD": "2026-09-28",
+          "HY": "2026-09-25",
+          "HYG": "2026-09-28",
+          "NDX": "2026-09-28",
+          "QID": "2026-09-28",
+          "QQQ": "2026-09-28",
+          "SGOV": "2026-09-28",
+          "SIF": "2026-09-28",
+          "SLV": "2026-09-28",
+          "SOXL": "2026-09-28",
+          "SOXX": "2026-09-28",
+          "SPX": "2026-09-28",
+          "SVIX": "2026-09-28",
+          "SVXY": "2026-09-28",
+          "TQQQ": "2026-09-28",
+          "UGL": "2026-09-28",
+          "USHY": "2026-09-28",
+          "VIX": "2026-09-28",
+          "VIX3M": "2026-09-28",
+          "XLP": "2026-09-28",
+          "XLY": "2026-09-28"
         }
       }
     },
     {
       "name": "targets_fresh",
       "status": "ok",
-      "summary": "오늘(2026-09-25) 기준 OK",
+      "summary": "오늘(2026-09-28) 기준 OK",
       "detail": {
-        "target_date": "2026-09-25",
-        "expected": "2026-09-25",
+        "target_date": "2026-09-28",
+        "expected": "2026-09-28",
         "age_days": 0,
         "leverage": {
           "enabled": false,
@@ -94,33 +94,33 @@
       "summary": "com.user.bnt-phase1 로드됨 (last exit 0)",
       "detail": {
         "label": "com.user.bnt-phase1",
-        "pid": "22466",
+        "pid": "42801",
         "last_exit": "0"
       }
     },
     {
       "name": "last_bot_run",
       "status": "ok",
-      "summary": "bot_20260928.log 정상 종료",
+      "summary": "bot_20260929.log 정상 종료",
       "detail": {
-        "file": "bot_20260928.log",
-        "log_date": "2026-09-28",
-        "lines": 53,
-        "last_line": "2026-09-28 09:36:19 [INFO] bot done",
+        "file": "bot_20260929.log",
+        "log_date": "2026-09-29",
+        "lines": 46,
+        "last_line": "2026-09-29 09:35:11 [INFO] bot done",
         "error_count": 0
       }
     },
     {
       "name": "snapshot_nav_fresh",
       "status": "ok",
-      "summary": "93행, last=2026-09-28 (1,026,928 CAD), partial 35개",
+      "summary": "94행, last=2026-09-29 (1,028,530 CAD), partial 35개",
       "detail": {
-        "rows": 93,
-        "last_date": "2026-09-28",
-        "last_nav_cad": 1026928.09,
+        "rows": 94,
+        "last_date": "2026-09-29",
+        "last_nav_cad": 1028530.17,
         "last_is_partial": false,
         "partial_rows_total": 35,
-        "expected_min_last": "2026-09-28"
+        "expected_min_last": "2026-09-29"
       }
     }
   ]
