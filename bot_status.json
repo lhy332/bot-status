@@ -1,85 +1,92 @@
 {
   "schema_version": 1,
-  "generated_at_et": "2026-09-29T09:35:12-0400",
-  "generated_at_utc": "2026-09-29T13:35:13Z",
-  "expected_last_close": "2026-09-28",
+  "generated_at_et": "2026-09-30T09:35:09-0400",
+  "generated_at_utc": "2026-09-30T13:35:10Z",
+  "expected_last_close": "2026-09-29",
   "overall": "warn",
   "checks": [
     {
       "name": "git_sync",
-      "status": "warn",
-      "summary": "HEAD d890863 ≠ origin/main 5d329e3",
+      "status": "ok",
+      "summary": "동기화됨 [main 6624377]",
       "detail": {
-        "head": "d890863",
-        "remote_main": "5d329e3",
+        "head": "6624377",
+        "remote_main": "6624377",
         "branch": "main"
       }
     },
     {
       "name": "parquet_fresh",
       "status": "warn",
-      "summary": "2/28개 critical stale (need 2026-09-28)",
+      "summary": "1/38개 critical stale (need 2026-09-29)",
       "detail": {
-        "expected": "2026-09-28",
-        "total": 28,
-        "critical_stale_count": 2,
-        "known_lag_count": 2,
+        "expected": "2026-09-29",
+        "total": 38,
+        "critical_stale_count": 1,
+        "known_lag_count": 3,
         "error_count": 0,
-        "unknown_count": 4,
+        "unknown_count": 0,
+        "missing_count": 0,
         "critical_stale": [
-          "CPI(2026-08-01,40bd)",
-          "ETH(2026-04-27,110bd)"
+          "ETH(2026-04-27,111bd)"
         ],
         "known_lag": [
-          "DFF(2026-09-25,1bd)",
-          "HY(2026-09-25,1bd)"
+          "CPI(2026-08-01,41bd)",
+          "DFF(2026-09-28,1bd)",
+          "HY(2026-09-28,1bd)"
         ],
         "error": [],
-        "unknown": [
-          "CPI",
-          "DTB3",
-          "SOXL",
-          "SOXX"
-        ],
+        "unknown": [],
+        "missing": [],
         "last_dates": {
-          "AGQ": "2026-09-28",
-          "BULZ": "2026-09-28",
+          "AGQ": "2026-09-29",
+          "BULZ": "2026-09-29",
           "CPI": "2026-08-01",
-          "DFF": "2026-09-25",
-          "DTB3": "2026-09-28",
+          "DFF": "2026-09-28",
+          "DGS2": "2026-09-29",
+          "DGS3MO": "2026-09-29",
+          "DTB3": "2026-09-29",
+          "ERX": "2026-09-29",
           "ETH": "2026-04-27",
-          "GCF": "2026-09-28",
-          "GLD": "2026-09-28",
-          "HY": "2026-09-25",
-          "HYG": "2026-09-28",
-          "NDX": "2026-09-28",
-          "QID": "2026-09-28",
-          "QQQ": "2026-09-28",
-          "SGOV": "2026-09-28",
-          "SIF": "2026-09-28",
-          "SLV": "2026-09-28",
-          "SOXL": "2026-09-28",
-          "SOXX": "2026-09-28",
-          "SPX": "2026-09-28",
-          "SVIX": "2026-09-28",
-          "SVXY": "2026-09-28",
-          "TQQQ": "2026-09-28",
-          "UGL": "2026-09-28",
-          "USHY": "2026-09-28",
-          "VIX": "2026-09-28",
-          "VIX3M": "2026-09-28",
-          "XLP": "2026-09-28",
-          "XLY": "2026-09-28"
+          "GCF": "2026-09-29",
+          "GLD": "2026-09-29",
+          "HY": "2026-09-28",
+          "HYG": "2026-09-29",
+          "KRE": "2026-09-29",
+          "NDX": "2026-09-29",
+          "QID": "2026-09-29",
+          "QQQ": "2026-09-29",
+          "SGOV": "2026-09-29",
+          "SIF": "2026-09-29",
+          "SLV": "2026-09-29",
+          "SOXL": "2026-09-29",
+          "SOXX": "2026-09-29",
+          "SPX": "2026-09-29",
+          "SPY": "2026-09-29",
+          "SQQQ": "2026-09-29",
+          "SVIX": "2026-09-29",
+          "SVXY": "2026-09-29",
+          "TLT": "2026-09-29",
+          "TMF": "2026-09-29",
+          "TMV": "2026-09-29",
+          "TQQQ": "2026-09-29",
+          "UGL": "2026-09-29",
+          "USHY": "2026-09-29",
+          "VIX": "2026-09-29",
+          "VIX3M": "2026-09-29",
+          "XLE": "2026-09-29",
+          "XLP": "2026-09-29",
+          "XLY": "2026-09-29"
         }
       }
     },
     {
       "name": "targets_fresh",
       "status": "ok",
-      "summary": "오늘(2026-09-28) 기준 OK",
+      "summary": "오늘(2026-09-29) 기준 OK",
       "detail": {
-        "target_date": "2026-09-28",
-        "expected": "2026-09-28",
+        "target_date": "2026-09-29",
+        "expected": "2026-09-29",
         "age_days": 0,
         "leverage": {
           "enabled": false,
@@ -94,33 +101,33 @@
       "summary": "com.user.bnt-phase1 로드됨 (last exit 0)",
       "detail": {
         "label": "com.user.bnt-phase1",
-        "pid": "42801",
+        "pid": "68379",
         "last_exit": "0"
       }
     },
     {
       "name": "last_bot_run",
       "status": "ok",
-      "summary": "bot_20260929.log 정상 종료",
+      "summary": "bot_20260930.log 정상 종료",
       "detail": {
-        "file": "bot_20260929.log",
-        "log_date": "2026-09-29",
-        "lines": 46,
-        "last_line": "2026-09-29 09:35:11 [INFO] bot done",
+        "file": "bot_20260930.log",
+        "log_date": "2026-09-30",
+        "lines": 48,
+        "last_line": "2026-09-30 09:35:08 [INFO] bot done",
         "error_count": 0
       }
     },
     {
       "name": "snapshot_nav_fresh",
       "status": "ok",
-      "summary": "94행, last=2026-09-29 (1,028,530 CAD), partial 35개",
+      "summary": "95행, last=2026-09-30 (1,033,229 CAD), partial 35개",
       "detail": {
-        "rows": 94,
-        "last_date": "2026-09-29",
-        "last_nav_cad": 1028530.17,
+        "rows": 95,
+        "last_date": "2026-09-30",
+        "last_nav_cad": 1033229.05,
         "last_is_partial": false,
         "partial_rows_total": 35,
-        "expected_min_last": "2026-09-29"
+        "expected_min_last": "2026-09-30"
       }
     }
   ]
