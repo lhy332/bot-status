@@ -1,26 +1,26 @@
 {
   "schema_version": 1,
-  "generated_at_et": "2026-10-30T09:52:35-0400",
-  "generated_at_utc": "2026-10-30T13:52:36Z",
-  "expected_last_close": "2026-10-29",
+  "generated_at_et": "2026-11-02T09:36:42-0500",
+  "generated_at_utc": "2026-11-02T14:36:43Z",
+  "expected_last_close": "2026-10-30",
   "overall": "warn",
   "checks": [
     {
       "name": "git_sync",
       "status": "ok",
-      "summary": "동기화됨 [main 8f3e993]",
+      "summary": "동기화됨 [main ba401cc]",
       "detail": {
-        "head": "8f3e993",
-        "remote_main": "8f3e993",
+        "head": "ba401cc",
+        "remote_main": "ba401cc",
         "branch": "main"
       }
     },
     {
       "name": "parquet_fresh",
       "status": "warn",
-      "summary": "1/38개 critical stale (need 2026-10-29)",
+      "summary": "1/38개 critical stale (need 2026-10-30)",
       "detail": {
-        "expected": "2026-10-29",
+        "expected": "2026-10-30",
         "total": 38,
         "critical_stale_count": 1,
         "known_lag_count": 3,
@@ -28,65 +28,65 @@
         "unknown_count": 0,
         "missing_count": 0,
         "critical_stale": [
-          "ETH(2026-04-27,133bd)"
+          "ETH(2026-04-27,134bd)"
         ],
         "known_lag": [
-          "CPI(2026-09-01,42bd)",
-          "DFF(2026-10-28,1bd)",
-          "HY(2026-10-28,1bd)"
+          "CPI(2026-09-01,43bd)",
+          "DFF(2026-10-29,1bd)",
+          "HY(2026-10-29,1bd)"
         ],
         "error": [],
         "unknown": [],
         "missing": [],
         "last_dates": {
-          "AGQ": "2026-10-29",
-          "BULZ": "2026-10-29",
+          "AGQ": "2026-10-30",
+          "BULZ": "2026-10-30",
           "CPI": "2026-09-01",
-          "DFF": "2026-10-28",
-          "DGS2": "2026-10-29",
-          "DGS3MO": "2026-10-29",
-          "DTB3": "2026-10-29",
-          "ERX": "2026-10-29",
+          "DFF": "2026-10-29",
+          "DGS2": "2026-10-30",
+          "DGS3MO": "2026-10-30",
+          "DTB3": "2026-10-30",
+          "ERX": "2026-10-30",
           "ETH": "2026-04-27",
-          "GCF": "2026-10-29",
-          "GLD": "2026-10-29",
-          "HY": "2026-10-28",
-          "HYG": "2026-10-29",
-          "KRE": "2026-10-29",
-          "NDX": "2026-10-29",
-          "QID": "2026-10-29",
-          "QQQ": "2026-10-29",
-          "SGOV": "2026-10-29",
-          "SIF": "2026-10-29",
-          "SLV": "2026-10-29",
-          "SOXL": "2026-10-29",
-          "SOXX": "2026-10-29",
-          "SPX": "2026-10-29",
-          "SPY": "2026-10-29",
-          "SQQQ": "2026-10-29",
-          "SVIX": "2026-10-29",
-          "SVXY": "2026-10-29",
-          "TLT": "2026-10-29",
-          "TMF": "2026-10-29",
-          "TMV": "2026-10-29",
-          "TQQQ": "2026-10-29",
-          "UGL": "2026-10-29",
-          "USHY": "2026-10-29",
-          "VIX": "2026-10-29",
-          "VIX3M": "2026-10-29",
-          "XLE": "2026-10-29",
-          "XLP": "2026-10-29",
-          "XLY": "2026-10-29"
+          "GCF": "2026-10-30",
+          "GLD": "2026-10-30",
+          "HY": "2026-10-29",
+          "HYG": "2026-10-30",
+          "KRE": "2026-10-30",
+          "NDX": "2026-10-30",
+          "QID": "2026-10-30",
+          "QQQ": "2026-10-30",
+          "SGOV": "2026-10-30",
+          "SIF": "2026-10-30",
+          "SLV": "2026-10-30",
+          "SOXL": "2026-10-30",
+          "SOXX": "2026-10-30",
+          "SPX": "2026-10-30",
+          "SPY": "2026-10-30",
+          "SQQQ": "2026-10-30",
+          "SVIX": "2026-10-30",
+          "SVXY": "2026-10-30",
+          "TLT": "2026-10-30",
+          "TMF": "2026-10-30",
+          "TMV": "2026-10-30",
+          "TQQQ": "2026-10-30",
+          "UGL": "2026-10-30",
+          "USHY": "2026-10-30",
+          "VIX": "2026-10-30",
+          "VIX3M": "2026-10-30",
+          "XLE": "2026-10-30",
+          "XLP": "2026-10-30",
+          "XLY": "2026-10-30"
         }
       }
     },
     {
       "name": "targets_fresh",
       "status": "ok",
-      "summary": "오늘(2026-10-29) 기준 OK",
+      "summary": "오늘(2026-10-30) 기준 OK",
       "detail": {
-        "target_date": "2026-10-29",
-        "expected": "2026-10-29",
+        "target_date": "2026-10-30",
+        "expected": "2026-10-30",
         "age_days": 0,
         "leverage": {
           "enabled": false,
@@ -101,33 +101,36 @@
       "summary": "com.user.bnt-phase1 로드됨 (last exit 0)",
       "detail": {
         "label": "com.user.bnt-phase1",
-        "pid": "50495",
+        "pid": "62319",
         "last_exit": "0"
       }
     },
     {
       "name": "last_bot_run",
-      "status": "ok",
-      "summary": "bot_20261030.log 정상 종료",
+      "status": "warn",
+      "summary": "bot_20261102.log 에러 1건",
       "detail": {
-        "file": "bot_20261030.log",
-        "log_date": "2026-10-30",
-        "lines": 48,
-        "last_line": "2026-10-30 09:52:33 [INFO] bot done",
-        "error_count": 0
+        "file": "bot_20261102.log",
+        "log_date": "2026-11-02",
+        "lines": 12,
+        "last_line": "2026-11-02 09:36:21 [ERROR] IB connect failed (9 attempt(s), window 600s): TimeoutError:  — is TWS running on 127.0.0.1:7497?",
+        "error_count": 1,
+        "error_sample": [
+          "2026-11-02 09:36:21 [ERROR] IB connect failed (9 attempt(s), window 600s): TimeoutError:  — is TWS running on 127.0.0.1:7497?"
+        ]
       }
     },
     {
       "name": "snapshot_nav_fresh",
-      "status": "ok",
-      "summary": "115행, last=2026-10-30 (949,191 CAD), partial 37개",
+      "status": "warn",
+      "summary": "116행, last=2026-11-02 partial (IBKR NAV 누락)",
       "detail": {
-        "rows": 115,
-        "last_date": "2026-10-30",
-        "last_nav_cad": 949191.13,
-        "last_is_partial": false,
-        "partial_rows_total": 37,
-        "expected_min_last": "2026-10-30"
+        "rows": 116,
+        "last_date": "2026-11-02",
+        "last_nav_cad": null,
+        "last_is_partial": true,
+        "partial_rows_total": 38,
+        "expected_min_last": "2026-11-02"
       }
     }
   ]
