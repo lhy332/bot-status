@@ -1,26 +1,26 @@
 {
   "schema_version": 1,
-  "generated_at_et": "2026-11-02T09:36:42-0500",
-  "generated_at_utc": "2026-11-02T14:36:43Z",
-  "expected_last_close": "2026-10-30",
-  "overall": "warn",
+  "generated_at_et": "2026-11-03T09:26:24-0500",
+  "generated_at_utc": "2026-11-03T14:26:25Z",
+  "expected_last_close": "2026-11-02",
+  "overall": "err",
   "checks": [
     {
       "name": "git_sync",
-      "status": "ok",
-      "summary": "동기화됨 [main ba401cc]",
+      "status": "warn",
+      "summary": "HEAD 9d9760a ≠ origin/main 2dfce37",
       "detail": {
-        "head": "ba401cc",
-        "remote_main": "ba401cc",
+        "head": "9d9760a",
+        "remote_main": "2dfce37",
         "branch": "main"
       }
     },
     {
       "name": "parquet_fresh",
       "status": "warn",
-      "summary": "1/38개 critical stale (need 2026-10-30)",
+      "summary": "1/38개 critical stale (need 2026-11-02)",
       "detail": {
-        "expected": "2026-10-30",
+        "expected": "2026-11-02",
         "total": 38,
         "critical_stale_count": 1,
         "known_lag_count": 3,
@@ -28,65 +28,65 @@
         "unknown_count": 0,
         "missing_count": 0,
         "critical_stale": [
-          "ETH(2026-04-27,134bd)"
+          "ETH(2026-04-27,135bd)"
         ],
         "known_lag": [
-          "CPI(2026-09-01,43bd)",
-          "DFF(2026-10-29,1bd)",
-          "HY(2026-10-29,1bd)"
+          "CPI(2026-09-01,44bd)",
+          "DFF(2026-10-30,1bd)",
+          "HY(2026-10-30,1bd)"
         ],
         "error": [],
         "unknown": [],
         "missing": [],
         "last_dates": {
-          "AGQ": "2026-10-30",
-          "BULZ": "2026-10-30",
+          "AGQ": "2026-11-02",
+          "BULZ": "2026-11-02",
           "CPI": "2026-09-01",
-          "DFF": "2026-10-29",
-          "DGS2": "2026-10-30",
-          "DGS3MO": "2026-10-30",
-          "DTB3": "2026-10-30",
-          "ERX": "2026-10-30",
+          "DFF": "2026-10-30",
+          "DGS2": "2026-11-02",
+          "DGS3MO": "2026-11-02",
+          "DTB3": "2026-11-02",
+          "ERX": "2026-11-02",
           "ETH": "2026-04-27",
-          "GCF": "2026-10-30",
-          "GLD": "2026-10-30",
-          "HY": "2026-10-29",
-          "HYG": "2026-10-30",
-          "KRE": "2026-10-30",
-          "NDX": "2026-10-30",
-          "QID": "2026-10-30",
-          "QQQ": "2026-10-30",
-          "SGOV": "2026-10-30",
-          "SIF": "2026-10-30",
-          "SLV": "2026-10-30",
-          "SOXL": "2026-10-30",
-          "SOXX": "2026-10-30",
-          "SPX": "2026-10-30",
-          "SPY": "2026-10-30",
-          "SQQQ": "2026-10-30",
-          "SVIX": "2026-10-30",
-          "SVXY": "2026-10-30",
-          "TLT": "2026-10-30",
-          "TMF": "2026-10-30",
-          "TMV": "2026-10-30",
-          "TQQQ": "2026-10-30",
-          "UGL": "2026-10-30",
-          "USHY": "2026-10-30",
-          "VIX": "2026-10-30",
-          "VIX3M": "2026-10-30",
-          "XLE": "2026-10-30",
-          "XLP": "2026-10-30",
-          "XLY": "2026-10-30"
+          "GCF": "2026-11-02",
+          "GLD": "2026-11-02",
+          "HY": "2026-10-30",
+          "HYG": "2026-11-02",
+          "KRE": "2026-11-02",
+          "NDX": "2026-11-02",
+          "QID": "2026-11-02",
+          "QQQ": "2026-11-02",
+          "SGOV": "2026-11-02",
+          "SIF": "2026-11-02",
+          "SLV": "2026-11-02",
+          "SOXL": "2026-11-02",
+          "SOXX": "2026-11-02",
+          "SPX": "2026-11-02",
+          "SPY": "2026-11-02",
+          "SQQQ": "2026-11-02",
+          "SVIX": "2026-11-02",
+          "SVXY": "2026-11-02",
+          "TLT": "2026-11-02",
+          "TMF": "2026-11-02",
+          "TMV": "2026-11-02",
+          "TQQQ": "2026-11-02",
+          "UGL": "2026-11-02",
+          "USHY": "2026-11-02",
+          "VIX": "2026-11-02",
+          "VIX3M": "2026-11-02",
+          "XLE": "2026-11-02",
+          "XLP": "2026-11-02",
+          "XLY": "2026-11-02"
         }
       }
     },
     {
       "name": "targets_fresh",
       "status": "ok",
-      "summary": "오늘(2026-10-30) 기준 OK",
+      "summary": "오늘(2026-11-02) 기준 OK",
       "detail": {
-        "target_date": "2026-10-30",
-        "expected": "2026-10-30",
+        "target_date": "2026-11-02",
+        "expected": "2026-11-02",
         "age_days": 0,
         "leverage": {
           "enabled": false,
@@ -97,40 +97,54 @@
     },
     {
       "name": "launchd_loaded",
-      "status": "ok",
-      "summary": "com.user.bnt-phase1 로드됨 (last exit 0)",
+      "status": "warn",
+      "summary": "com.user.bnt-phase1 로드됨, last exit=4",
       "detail": {
         "label": "com.user.bnt-phase1",
-        "pid": "62319",
-        "last_exit": "0"
+        "pid": "39800",
+        "last_exit": "4"
       }
     },
     {
       "name": "last_bot_run",
       "status": "warn",
-      "summary": "bot_20261102.log 에러 1건",
+      "summary": "bot_20261103.log 에러 1건",
       "detail": {
-        "file": "bot_20261102.log",
-        "log_date": "2026-11-02",
-        "lines": 12,
-        "last_line": "2026-11-02 09:36:21 [ERROR] IB connect failed (9 attempt(s), window 600s): TimeoutError:  — is TWS running on 127.0.0.1:7497?",
+        "file": "bot_20261103.log",
+        "log_date": "2026-11-03",
+        "lines": 4,
+        "last_line": "2026-11-03 09:26:23 [ERROR] IB connect failed (1 attempt(s), window 600s): ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 7497) — 11-03 09:03 IBKR 로그인 거부 (INVALID_USERNAME_OR_BAD",
         "error_count": 1,
         "error_sample": [
-          "2026-11-02 09:36:21 [ERROR] IB connect failed (9 attempt(s), window 600s): TimeoutError:  — is TWS running on 127.0.0.1:7497?"
+          "2026-11-03 09:26:23 [ERROR] IB connect failed (1 attempt(s), window 600s): ConnectionRefusedError: [Errno 61] Connect call failed ('127.0.0.1', 7497) — 11-03 09:03 IBKR 로그인 거부 (INVALID_USERNAME_OR_BAD"
         ]
       }
     },
     {
       "name": "snapshot_nav_fresh",
       "status": "warn",
-      "summary": "116행, last=2026-11-02 partial (IBKR NAV 누락)",
+      "summary": "117행, last=2026-11-03 partial (IBKR NAV 누락)",
       "detail": {
-        "rows": 116,
-        "last_date": "2026-11-02",
+        "rows": 117,
+        "last_date": "2026-11-03",
         "last_nav_cad": null,
         "last_is_partial": true,
-        "partial_rows_total": 38,
-        "expected_min_last": "2026-11-02"
+        "partial_rows_total": 39,
+        "expected_min_last": "2026-11-03"
+      }
+    },
+    {
+      "name": "tws_api",
+      "status": "err",
+      "summary": "11-03 09:03 IBKR 로그인 거부 (INVALID_USERNAME_OR_BAD_IP — 아이디 무효·공인 IP 차단 등, 비밀번호 단계 전) — 자격증명 확인 필요 (API 포트 7497 닫힘)",
+      "detail": {
+        "kind": "port_closed",
+        "codes": [],
+        "error": "ConnectionRefusedError: [Errno 61] Connection refused",
+        "ibc_login": {
+          "kind": "rejected_login",
+          "at": "2026-11-03 09:03:33"
+        }
       }
     }
   ]
